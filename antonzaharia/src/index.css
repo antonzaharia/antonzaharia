@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.main {
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat, repeat;
+  background-color: white;
+  background-position: right;
+  height: 730px;
+  background-size: auto 100%;
+  
+}

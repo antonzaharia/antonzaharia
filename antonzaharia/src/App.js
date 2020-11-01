@@ -3,8 +3,8 @@ import background from "./images/background.jpg"
 
 function App() {
   return (
-    <div >
-      <img src={background} alt="background" className="background"/>
+    <div className="main">
+      {/* <img src={background} alt="background" className="background"/> */}
      <ContentContainer />
     </div>
   );
