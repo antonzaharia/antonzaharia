@@ -1,11 +1,15 @@
-import ContentContainer from './containers/ContentContainer'
-import background from "./images/background.jpg"
+import ContentContainer from "./containers/ContentContainer";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="main">
-      {/* <img src={background} alt="background" className="background"/> */}
-     <ContentContainer />
+    <div>
+      <Router>
+        <div className="main">
+          <Route exact path="/" render={ routerProps => <ContentContainer {...routerProps} />}/>
+          
+        </div>
+      </Router>
     </div>
   );
 }
