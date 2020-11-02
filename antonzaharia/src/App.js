@@ -5,9 +5,12 @@ function App() {
   return (
     <div>
       <Router>
-        <div className="main">
+        <div id="wrapper">
           {/* <Route exact path="/" render={ routerProps => <ContentContainer {...routerProps} />}/> */}
           <Route exact path="/" render={ routerProps => <MainContainer {...routerProps} />}/>
+          <div id="bg"></div>
+
+          
         </div>
       </Router>
     </div>
