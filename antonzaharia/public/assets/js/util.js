@@ -19,11 +19,11 @@
 
 			b.push(
 				'<a ' +
-					'className="link depth-' + indent + '"' +
+					'class="link depth-' + indent + '"' +
 					( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
 					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
 				'>' +
-					'<span className="indent-' + indent + '"></span>' +
+					'<span class="indent-' + indent + '"></span>' +
 					$this.text() +
 				'</a>'
 			);
