@@ -1,10 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import pic01 from "../images/pic01.jpg";
+import {useSpring, animated } from 'react-spring'
+
+    
 
 export default function Intro({ close }) {
+  const props = useSpring({
+    config: { duration: 250 },
+    from: { opacity: 0 },
+    to: {
+      opacity: 1
+    }
+  });
   return (
-    <article id="intro">
+    <animated.article id="intro" style={props}>
       <h2 className="major">Intro</h2>
       <span>
         <Link to="/" onClick={close} className="close">
@@ -26,6 +36,6 @@ export default function Intro({ close }) {
         excellent organizing and planning skills that enable adaptability and
         help to provide the first-class service and meet deadlines.
       </p>
-    </article>
+    </animated.article>
   );
 }
