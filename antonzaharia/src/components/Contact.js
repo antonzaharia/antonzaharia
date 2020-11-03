@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
-export default function Contact() {
+export default function Contact({ close }) {
   return (
     <article id="contact">
       <h2 className="major">Contact</h2>
+      <span><Link to="/" onClick={close} className="close"><i className="fa fa-times-circle" aria-hidden="true"></i></Link></span>
       <form>
         <div className="fields">
           <div className="field half">

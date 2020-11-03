@@ -43,7 +43,6 @@ code {
   margin-top: 10px;
   margin-right: auto;
 } */
-
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600);
 
 /*
@@ -418,6 +417,7 @@ input, select, textarea {
 					}
 
 		}
+
 
 	label {
 		color: #ffffff;
@@ -1704,3 +1704,7 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+.link {
+	color: red;
+	text-decoration: none;
+}
