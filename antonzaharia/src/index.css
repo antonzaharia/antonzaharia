@@ -75,6 +75,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	background-color: white;
 }
 
 ol, ul {
@@ -1204,10 +1205,12 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 			background-image: url("images/background.jpg");
-			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
 			z-index: 1;
+			background-position: right;
+			background-color: white;
+            background-size: auto 100%;
 		}
 
 		body.is-article-visible #bg:after {
@@ -1704,7 +1707,11 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
-.link {
-	color: red;
-	text-decoration: none;
+.link-project {
+	color: #FF5733;
+	font-weight: bold;
+}
+.video {
+	width: 100% !important;
+	height: auto !important;
 }

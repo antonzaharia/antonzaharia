@@ -1,12 +1,16 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import pic01 from "../images/pic01.jpg";
 
 export default function Intro({ close }) {
   return (
     <article id="intro">
       <h2 className="major">Intro</h2>
-	  <span><Link to="/" onClick={close} className="close"><i className="fa fa-times-circle" aria-hidden="true"></i></Link></span>
+      <span>
+        <Link to="/" onClick={close} className="close">
+          <i className="fa fa-times-circle" aria-hidden="true"></i>
+        </Link>
+      </span>
       <span className="image main">
         <img src={pic01} alt="" />
       </span>
@@ -15,16 +19,12 @@ export default function Intro({ close }) {
         my website.
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus
-        rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh
-        porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc
-        ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit
-        amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla
-        in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique
-        senectus et netus et malesuada fames ac turpis egestas. In non lorem sit
-        amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed
-        vehicula.
+        I am experienced in Ruby on Rails and JavaScript-based programming and a
+        background in multi-drop delivery services, on-site surveying, and
+        restaurant management. Possess strong communication, decision-making,
+        and problem-solving skills to deliver great customer service, as well as
+        excellent organizing and planning skills that enable adaptability and
+        help to provide the first-class service and meet deadlines.
       </p>
     </article>
   );

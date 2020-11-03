@@ -6,30 +6,9 @@ export default function Contact({ close }) {
     <article id="contact">
       <h2 className="major">Contact</h2>
       <span><Link to="/" onClick={close} className="close"><i className="fa fa-times-circle" aria-hidden="true"></i></Link></span>
-      <form>
-        <div className="fields">
-          <div className="field half">
-            <label htmlFor="name">Name</label>
-            <input type="text" name="name" id="name" />
-          </div>
-          <div className="field half">
-            <label htmlFor="email">Email</label>
-            <input type="text" name="email" id="email" />
-          </div>
-          <div className="field">
-            <label htmlFor="message">Message</label>
-            <textarea name="message" id="message" rows="4"></textarea>
-          </div>
-        </div>
-        <ul className="actions">
-          <li>
-            <input type="submit" value="Send Message" className="primary" />
-          </li>
-          <li>
-            <input type="reset" value="Reset" />
-          </li>
-        </ul>
-      </form>
+      <p><a href="mailto:zahariaanton95@gmail.com">Send email</a></p>
+      <p><a href="https://m.me/Zaharia.Anton/">Message on Facebook</a></p>
+      <p><a href="slack://user?team=T02MD9XTF&id=U015HAMMTK4">Message on Slack</a></p>
     </article>
   );
 }
