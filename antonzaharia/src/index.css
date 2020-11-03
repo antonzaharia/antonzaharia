@@ -44,6 +44,7 @@ code {
   margin-right: auto;
 } */
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
 
 /*
 	Dimension by HTML5 UP
@@ -1707,11 +1708,21 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
 .link-project {
 	color: #FF5733;
 	font-weight: bold;
 }
 .video {
 	width: 100% !important;
-	height: auto !important;
+	height: 320px !important;
+}
+.contact-btn {
+	padding: 20px;
+	background-color: #ffffff;
+	color: black;
+	border-radius: 5px;
+	border: 1px solid black;
+	font-weight: bold;
 }
