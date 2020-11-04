@@ -1,9 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {useSpring, animated } from 'react-spring'
 
 export default function About({ close }) {
+  const props = useSpring({
+		config: { duration: 250 },
+		from: { opacity: 0 },
+		to: {
+		  opacity: 1
+		}
+	  });
   return (
-    <article id="about">
+    <animated.article id="about" style={props}>
       <h2 className="major">About</h2>
       <span>
         <Link to="/" onClick={close} className="close">
@@ -37,6 +45,6 @@ export default function About({ close }) {
         interest, proved to me that this has to be my career. And, here am I,
         happy and proud of what I am doing.
       </p>
-    </article>
+    </animated.article>
   );
 }

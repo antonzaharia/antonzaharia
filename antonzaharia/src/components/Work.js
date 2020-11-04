@@ -1,9 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {useSpring, animated } from 'react-spring'
 
 export default function Work({ close }) {
+	const props = useSpring({
+		config: { duration: 250 },
+		from: { opacity: 0 },
+		to: {
+		  opacity: 1
+		}
+	  });
     return (
-        <article id="work">
+        <animated.article id="work" style={props}>
 			<h2 className="major">Work</h2>
 			<span><Link to="/" onClick={close} className="close"><i className="fa fa-times-circle" aria-hidden="true"></i></Link></span>
 			<span className="image main"><img src="images/pic02.jpg" alt="" /></span>
@@ -34,7 +42,7 @@ export default function Work({ close }) {
 			<p>Best Seller CLI</p>
 			<iframe title="best-seller" className="video" src="https://www.youtube.com/embed/m8LkFBfkMSA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			<hr />
-		</article>
+		</animated.article>
     )
 }
 
