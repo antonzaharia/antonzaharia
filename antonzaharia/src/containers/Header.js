@@ -1,5 +1,5 @@
 import React from 'react'
-import Intro from './Intro'
+import Intro from '../components/Intro'
 import Head from '../components/Head'
 import Work from '../components/Work';
 import About from '../components/About';
