@@ -18,27 +18,32 @@ class Header extends React.Component {
             contact: false
         }
     }
+
     returnToHome = () => this.setState({header: true, intro: false, work: false, about: false, contact: false})
     closeAll = () => this.setState({header: false, intro: false, work: false, about: false, contact: false})
     showIntro = (event) => {
         event.preventDefault()
         this.closeAll()
         this.setState({intro: true, })
+        window.scrollTo(0, 0)
     }
     showWork = (event) => {
         event.preventDefault()
         this.closeAll()
         this.setState({work: true, })
+        window.scrollTo(0, 0)
     }
     showAbout = (event) => {
         event.preventDefault()
         this.closeAll()
         this.setState({about: true, })
+        window.scrollTo(0, 0)
     }
     showContact= (event) => {
         event.preventDefault()
         this.closeAll()
         this.setState({contact: true, })
+        window.scrollTo(0, 0)
     }
 
     render () {return (
