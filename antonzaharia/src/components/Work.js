@@ -19,12 +19,12 @@ export default function Work({ close }) {
 			
 			<a className="link-project" href="https://raffle-frontend.web.app/">Live Website</a> and <a className="link-project" href="https://github.com/antonzaharia/raffle-app">Github</a> for
 			<p>Raffle React based app with Ruby on Rails API backend</p>
-			<iframe title="raffle" className="video" src="https://www.youtube.com/embed/ywZg1YtcpIo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+			<iframe title="raffle" className="video" src="https://www.youtube.com/embed/jwR70uubcGU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
 
 			<hr />
 			<a className="link-project" href="https://topz-215c8.firebaseapp.com/">Live Website</a> and <a className="link-project" href="https://github.com/antonzaharia/RGadgets">Github</a> for
 			<p>TOPZ - SPA Javascript and Ruby on Rails</p>
-			<iframe title="rgadgets" className="video" src="https://www.youtube.com/embed/AXnkMYYpjBA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+			<iframe title="rgadgets" className="video" src="https://www.youtube.com/embed/22TECnIjVGg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 			<hr />
 			
