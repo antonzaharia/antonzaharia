@@ -43,6 +43,9 @@ export default function About({ close }) {
         interest, proved to me that this has to be my career. And, here am I,
         happy and proud of what I am doing.
       </p>
+
+      <p>For more information about me and what I do visit my blog:</p>
+      <a href="https://antonzaharia.medium.com/">Anton Zaharia on Medium</a>
     </animated.article>
   );
 }

@@ -1,17 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import pic01 from "../images/pic01.jpg";
-import {useSpring, animated } from 'react-spring'
-
-    
+import { useSpring, animated } from "react-spring";
 
 export default function Intro({ close }) {
   const props = useSpring({
     config: { duration: 250 },
     from: { opacity: 0 },
     to: {
-      opacity: 1
-    }
+      opacity: 1,
+    },
   });
   return (
     <animated.article id="intro" style={props}>
@@ -29,8 +27,15 @@ export default function Intro({ close }) {
         my website.
       </p>
       <p>
-        I am experienced in Ruby on Rails and JavaScript-based programming and a
-        background in multi-drop delivery services, on-site surveying, and
+        Bold and ambitious, I usually dive headfirst into even the most
+        challenging situations. Uncomplicated and direct in my approach, I often
+        get frustrated by exhaustive details and unnecessary nuances. I lead
+        with blind optimism, barreling through life with an electric "joie de
+        vivre" that perfectly complements my distinctive impulsivity.
+      </p>
+      <p>
+        I am an experienced Ruby on Rails and JavaScript-based programmer, with
+        a background in multi-drop delivery services, on-site surveying, and
         restaurant management. Possess strong communication, decision-making,
         and problem-solving skills to deliver great customer service, as well as
         excellent organizing and planning skills that enable adaptability and
