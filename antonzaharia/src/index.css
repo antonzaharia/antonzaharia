@@ -1876,3 +1876,11 @@ body.is-preload #footer {
     0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
     0 16px 16px rgba(0, 0, 0, 0.12);
 }
+.resume-btn {
+  margin: 10px;
+}
+.resume-btn:hover {
+  color: black;
+  box-shadow: 1px 1px 6px 4px #ccc;
+  border: none;
+}

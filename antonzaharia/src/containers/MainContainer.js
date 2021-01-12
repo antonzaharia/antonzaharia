@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Icons from "./Icons";
 import { useSpring, animated } from "react-spring";
+import resume from "./resume.pdf";
 
 const MainContainer = () => {
   const props = useSpring({
@@ -15,6 +16,9 @@ const MainContainer = () => {
   return (
     <animated.div id="wrapper" style={props}>
       <Header />
+      <a href={resume} className="resume-btn" download>
+        See my Resume
+      </a>
       <Icons />
       <footer id="footer">
         <p className="copyright">&copy; antonzaharia.com</p>
