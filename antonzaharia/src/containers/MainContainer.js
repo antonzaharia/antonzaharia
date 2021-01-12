@@ -17,7 +17,7 @@ const MainContainer = () => {
     <animated.div id="wrapper" style={props}>
       <Header />
       <a href={resume} className="resume-btn" download>
-        See my Resume
+        <i className="fas fa-file-pdf"></i> Download My CV
       </a>
       <Icons />
       <footer id="footer">
