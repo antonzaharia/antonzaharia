@@ -5,14 +5,15 @@ import { useSpring, animated } from "react-spring";
 
 export default function Intro({ close }) {
   const props = useSpring({
-    config: { duration: 250 },
-    from: { opacity: 0 },
+    config: { duration: 400 },
+    from: { opacity: 0, height: 20 },
     to: {
       opacity: 1,
+      height: 800,
     },
   });
   return (
-    <animated.article id="intro" style={props}>
+    <animated.article className="fade" style={props}>
       <h2 className="major">Intro</h2>
       <span>
         <Link to="/" onClick={close} className="close">

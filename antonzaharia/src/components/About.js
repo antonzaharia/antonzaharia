@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {useSpring, animated } from 'react-spring'
+import { useSpring, animated } from "react-spring";
 
 export default function About({ close }) {
   const props = useSpring({
-		config: { duration: 250 },
-		from: { opacity: 0 },
-		to: { opacity: 1 }
-	  });
+    config: { duration: 350 },
+    from: { opacity: 0, height: 20 },
+    to: { opacity: 1, height: 1100 },
+  });
   return (
     <animated.article id="about" style={props}>
       <h2 className="major">About</h2>
@@ -38,10 +38,11 @@ export default function About({ close }) {
         almost 6 years of watching youtube tutorials and following free online
         courses, I realized that this is that “something” I was searching for,
         at my 18’s.
-		</p>
-		<p>Spending hours of my free time learning, without any
-        interest, proved to me that this has to be my career. And, here am I,
-        happy and proud of what I am doing.
+      </p>
+      <p>
+        Spending hours of my free time learning, without any interest, proved to
+        me that this has to be my career. And, here am I, happy and proud of
+        what I am doing.
       </p>
 
       <p>For more information about me and what I do visit my blog:</p>

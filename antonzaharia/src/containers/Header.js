@@ -5,6 +5,7 @@ import Work from "../components/Work";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import { Link } from "react-router-dom";
+import gsap from "gsap";
 
 class Header extends React.Component {
   constructor(props) {
@@ -20,13 +21,17 @@ class Header extends React.Component {
   }
 
   returnToHome = () =>
-    this.setState({
-      header: true,
-      intro: false,
-      work: false,
-      about: false,
-      contact: false,
-    });
+    setTimeout(() => {
+      gsap.to(".fade", { opacity: 0, duration: 1 });
+      this.setState({
+        header: true,
+        intro: false,
+        work: false,
+        about: false,
+        contact: false,
+      });
+    }, 1000);
+
   closeAll = () =>
     this.setState({
       header: false,

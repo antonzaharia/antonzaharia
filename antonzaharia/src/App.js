@@ -1,5 +1,4 @@
 import MainContainer from "./containers/MainContainer";
-import TestContainer from "./containers/TestContainer";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
 
@@ -21,10 +20,6 @@ function App() {
             exact
             path="/"
             render={(routerProps) => <MainContainer {...routerProps} />}
-          />
-          <Route
-            path="/test"
-            render={(routerProps) => <TestContainer {...routerProps} />}
           />
           <animated.div id="bg" style={props}></animated.div>
         </>
