@@ -8,7 +8,7 @@ export default function Work({ close }) {
     from: { opacity: 0, height: 20 },
     to: {
       opacity: 1,
-      height: 2750,
+      height: "auto",
     },
   });
   return (

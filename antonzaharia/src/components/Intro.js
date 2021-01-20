@@ -9,7 +9,7 @@ export default function Intro({ close }) {
     from: { opacity: 0, height: 20 },
     to: {
       opacity: 1,
-      height: 800,
+      height: "auto",
     },
   });
   return (

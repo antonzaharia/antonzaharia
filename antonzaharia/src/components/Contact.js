@@ -8,7 +8,7 @@ export default function Contact({ close }) {
     from: { opacity: 0, height: 20 },
     to: {
       opacity: 1,
-      height: 500,
+      height: "auto",
     },
   });
   return (

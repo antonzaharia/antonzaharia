@@ -31,7 +31,7 @@ export default function Resume() {
     from: { opacity: 0, height: 20 },
     to: {
       opacity: 1,
-      height: 385,
+      height: "auto",
     },
   });
 

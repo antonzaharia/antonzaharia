@@ -6,7 +6,7 @@ export default function About({ close }) {
   const props = useSpring({
     config: { duration: 350 },
     from: { opacity: 0, height: 20 },
-    to: { opacity: 1, height: 1100 },
+    to: { opacity: 1, height: "auto" },
   });
   return (
     <animated.article id="about" style={props}>

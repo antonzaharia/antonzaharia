@@ -4,7 +4,7 @@ import { useSpring, animated } from "react-spring";
 export default function Head() {
   const props = useSpring({
     from: { opacity: "0.5", height: "0px" },
-    to: { opacity: "1", height: "250px" },
+    to: { opacity: "1", height: "auto" },
   });
   return (
     <>
