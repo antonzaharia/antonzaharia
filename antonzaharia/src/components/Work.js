@@ -5,9 +5,10 @@ import { useSpring, animated } from "react-spring";
 export default function Work({ close }) {
   const props = useSpring({
     config: { duration: 250 },
-    from: { opacity: 0 },
+    from: { opacity: 0, height: 20 },
     to: {
       opacity: 1,
+      height: 2750,
     },
   });
   return (

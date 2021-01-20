@@ -1895,8 +1895,8 @@ body.is-preload #footer {
   opacity: 0;
 }
 .resume {
-  width: 45ch;
-  height: 45ch;
+  width: 50ch;
+  height: 50ch;
   background: grey;
   border-radius: 5px;
   background-image: url("./images/resume.png");
@@ -1907,10 +1907,11 @@ body.is-preload #footer {
   will-change: transform;
   border: 15px solid white;
   cursor: pointer;
+  padding-top: 200px;
 }
 .download-btn {
-  margin-top: 50%;
-  background-color: red;
+  padding: 10px;
+  background-color: black;
   width: 100%;
   font-size: 30px;
   opacity: 0;

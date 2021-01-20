@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import React from "react";
 import { useSpring, animated } from "react-spring";
+import resume from "./resume.pdf";
 
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 20,
@@ -25,15 +26,25 @@ export default function Resume() {
     gsap.to(".download-btn", { opacity: 0, duration: 0.5 });
     gsap.to(".resume", { opacity: 1, duration: 0.5 });
   };
+  const style = useSpring({
+    config: { duration: 400 },
+    from: { opacity: 0, height: 20 },
+    to: {
+      opacity: 1,
+      height: 385,
+    },
+  });
 
   return (
-    <animated.div
-      class="resume"
-      onMouseMove={handleOnMouseMove}
-      onMouseLeave={handleOnMouseLeave}
-      style={{ transform: props.xys.interpolate(trans) }}
-    >
-      <p className="download-btn">Download a copy</p>
-    </animated.div>
+    <animated.a href={resume} className="container-cv" style={style}>
+      <animated.div
+        class="resume"
+        onMouseMove={handleOnMouseMove}
+        onMouseLeave={handleOnMouseLeave}
+        style={{ transform: props.xys.interpolate(trans) }}
+      >
+        <p className="download-btn">View PDF</p>
+      </animated.div>
+    </animated.a>
   );
 }
