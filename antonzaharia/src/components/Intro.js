@@ -13,7 +13,7 @@ export default function Intro({ close }) {
     },
   });
   return (
-    <animated.article className="fade" style={props}>
+    <animated.article style={props}>
       <h2 className="major">Intro</h2>
       <span>
         <Link to="/" onClick={close} className="close">

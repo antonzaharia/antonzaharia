@@ -6,6 +6,7 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
+import Resume from "../components/Resume";
 
 class Header extends React.Component {
   constructor(props) {
@@ -17,20 +18,19 @@ class Header extends React.Component {
       work: false,
       about: false,
       contact: false,
+      resume: false,
     };
   }
 
   returnToHome = () =>
-    setTimeout(() => {
-      gsap.to(".fade", { opacity: 0, duration: 1 });
-      this.setState({
-        header: true,
-        intro: false,
-        work: false,
-        about: false,
-        contact: false,
-      });
-    }, 1000);
+    this.setState({
+      header: true,
+      intro: false,
+      work: false,
+      about: false,
+      contact: false,
+      resume: false,
+    });
 
   closeAll = () =>
     this.setState({
@@ -39,6 +39,7 @@ class Header extends React.Component {
       work: false,
       about: false,
       contact: false,
+      resume: false,
     });
   showIntro = (event) => {
     event.preventDefault();
@@ -62,6 +63,12 @@ class Header extends React.Component {
     event.preventDefault();
     this.closeAll();
     this.setState({ contact: true });
+    window.scrollTo(0, 0);
+  };
+  showResume = (event) => {
+    event.preventDefault();
+    this.closeAll();
+    this.setState({ resume: true });
     window.scrollTo(0, 0);
   };
 
@@ -99,6 +106,13 @@ class Header extends React.Component {
           ) : (
             ""
           )}
+          {this.state.resume ? (
+            <div id="main">
+              <Resume close={this.returnToHome} />
+            </div>
+          ) : (
+            ""
+          )}
           <nav>
             <ul className="nav-shadow">
               <li>
@@ -119,6 +133,11 @@ class Header extends React.Component {
               <li>
                 <Link to="" onClick={this.showContact}>
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link to="" onClick={this.showResume}>
+                  Resume
                 </Link>
               </li>
             </ul>
