@@ -5,7 +5,6 @@ import Work from "../components/Work";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import { Link } from "react-router-dom";
-import gsap from "gsap";
 import Resume from "../components/Resume";
 
 class Header extends React.Component {
