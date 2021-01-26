@@ -2,16 +2,12 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 
 export default function Head() {
-  const props = useSpring({
-    from: { opacity: "0.5", height: "0px" },
-    to: { opacity: "1", height: "auto" },
-  });
   return (
     <>
       <div className="logo">
         <span className="icon fa-gem"></span>
       </div>
-      <animated.div className="content" style={props}>
+      <animated.div className="content">
         <div className="inner">
           <h1>antonzaharia.com</h1>
           <p>
