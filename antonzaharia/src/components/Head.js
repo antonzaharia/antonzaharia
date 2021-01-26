@@ -1,5 +1,4 @@
 import React from "react";
-import { useSpring, animated } from "react-spring";
 
 export default function Head() {
   return (
@@ -7,7 +6,7 @@ export default function Head() {
       <div className="logo">
         <span className="icon fa-gem"></span>
       </div>
-      <animated.div className="content">
+      <div className="content">
         <div className="inner">
           <h1>antonzaharia.com</h1>
           <p>
@@ -21,7 +20,7 @@ export default function Head() {
           </p>
           <p>Henry Ford</p>
         </div>
-      </animated.div>
+      </div>
     </>
   );
 }
